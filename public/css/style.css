@@ -1,0 +1,29 @@
+h1,h2,h3,h4,h5,h6,p,a,ul,li,pre{margin: 0}
+a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+.header{
+	background: greenyellow;
+	padding:10px;
+}
+.content_area {
+    background: #e1b12c;
+    padding: 10px;
+}
+.single_content{
+	background: #5758BB;
+	padding: 5px;
+	color: #fff;
+}
+.table-area{
+	background:tomato;
+	padding: 10px;
+}
+.single-user-table td{text-align: left!important;}
+.footer{
+	background: #1B1464;
+	padding:10px;
+	color: #fff;
+}
