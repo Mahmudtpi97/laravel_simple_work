@@ -37,3 +37,9 @@ Route::get('logout','Auth\logoutController@logout');
 // File Upload Route
 Route::get('file','FileUploadController@file');
 Route::post('fileUpload','FileUploadController@fileUpload');
+
+// Session Route
+Route::get('sessionPut','SesCookController@sessionPut');
+Route::get('sessionGet','SesCookController@sessionGet');
+Route::get('sessionForget','SesCookController@sessionForget');
+Route::get('sessionFlush','SesCookController@sessionFlush');
