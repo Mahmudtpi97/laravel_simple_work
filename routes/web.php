@@ -43,3 +43,8 @@ Route::get('sessionPut','SesCookController@sessionPut');
 Route::get('sessionGet','SesCookController@sessionGet');
 Route::get('sessionForget','SesCookController@sessionForget');
 Route::get('sessionFlush','SesCookController@sessionFlush');
+
+// Cookie Route
+Route::get('cookieAdd','SesCookController@cookieAdd');
+Route::get('cookieGet','SesCookController@cookieGet');
+Route::get('cookieForget','SesCookController@cookieForget');

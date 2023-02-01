@@ -3,9 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 
 class SesCookController extends Controller
 {
+
+    ////// Session Area /////
+
     // Session Add
     public function sessionPut(Request $request){
       $result = $request->session()->put('nameKey', 'Mahmudul Hasan');
@@ -33,4 +37,31 @@ class SesCookController extends Controller
         $result = $request->session()->flush();
         return "All Session Forget ";
       }
+
+
+
+    //// Cookies Area ////
+
+    // Cookies Add
+    public function cookieAdd(Request $request){
+        $result = Cookie::queue('nameKey','Mahmudul Hasan') ;
+        return "Cookie Add";
+      }
+    // Cookies Get
+    public function cookieGet(){
+        $result = Cookie::get('nameKey');
+    if ($result == true) {
+        return $result;
+    }
+    else{
+        return "Cookie Destroy";
+    }
+ }
+  // Cookies Forget
+  public function cookieForget(){
+    $result = Cookie::queue(Cookie::forget('nameKey'));
+    return "Cookie Forget ";
+  }
+
+
 }
