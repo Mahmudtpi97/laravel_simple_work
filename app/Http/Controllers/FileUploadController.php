@@ -9,7 +9,7 @@ class FileUploadController extends Controller
         return view('filesUpload');
     }
     public function fileUpload(Request $request){
-       $result = $request->file('fileImg')->store('image');
+       $result = $request->file('fileImg')->store('images');
        return $result;
     }
 
