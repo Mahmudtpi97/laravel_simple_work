@@ -32,3 +32,8 @@ Route::get('login','Auth\loginController@index')->name('login');
 Route::post('login','Auth\loginController@store')->name('login.confirm');
 // Logout
 Route::get('logout','Auth\logoutController@logout');
+// HTTP Client Request
+
+// File Upload Route
+Route::get('file','FileUploadController@file');
+Route::post('fileUpload','FileUploadController@fileUpload');

@@ -14,7 +14,7 @@ class registerController extends Controller
     public function index()
     {
         return view('auth.register');
-    } 
+    }
     public function store(registerRequest $request)
     {
         // return $request->all();
@@ -45,8 +45,8 @@ class registerController extends Controller
 
         User::create($getData);
         return redirect()->to('users')->with('success','User Create Successfully!');
-     
-    } 
+
+    }
 
     public function show()
     {
