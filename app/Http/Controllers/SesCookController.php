@@ -60,7 +60,7 @@ class SesCookController extends Controller
   // Cookies Forget
   public function cookieForget(){
     $result = Cookie::queue(Cookie::forget('nameKey'));
-    return "Cookie Forget ";
+    return "Cookie Forget";
   }
 
 
